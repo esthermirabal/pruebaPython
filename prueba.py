@@ -75,7 +75,6 @@ def eliminar_celular(id):
         return jsonify({'mesage': 'Se han eliminado los datos'}), 200
     return jsonify({'mesage': 'No se encontro el modelo que buscabas'}), 404
 
-
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
